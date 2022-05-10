@@ -32449,9 +32449,9 @@ function Form(_ref) {
   }, "Hire"), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     onClick: show
-  }, "Show Stream"), /*#__PURE__*/_react.default.createElement("label", {
+  }, "Show Stream"), /*#__PURE__*/_react.default.createElement("p", null, " ", /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "stream"
-  }, "Steam ID"), /*#__PURE__*/_react.default.createElement("input", {
+  }, "Steam ID")), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     id: "streamid",
     placeholder: "[Enter Stream Id Here]"
@@ -32484,9 +32484,9 @@ function Form(_ref) {
   }, "Hire"), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     onClick: show
-  }, "Show Stream"), /*#__PURE__*/_react.default.createElement("label", {
+  }, "Show Stream"), /*#__PURE__*/_react.default.createElement("p", null, " ", /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "stream"
-  }, "Steam ID"), /*#__PURE__*/_react.default.createElement("input", {
+  }, "Steam ID")), " ", /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     id: "streamid2",
     placeholder: "[Enter Stream Id Here]"
@@ -32519,9 +32519,9 @@ function Form(_ref) {
   }, "Hire"), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     onClick: show
-  }, "Show Stream"), /*#__PURE__*/_react.default.createElement("label", {
+  }, "Show Stream"), /*#__PURE__*/_react.default.createElement("p", null, " ", /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "stream"
-  }, "Steam ID"), /*#__PURE__*/_react.default.createElement("input", {
+  }, "Steam ID")), " ", /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     id: "streamid3",
     placeholder: "[Enter Stream Id Here]"
@@ -50367,7 +50367,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52245" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55241" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
