@@ -65,7 +65,7 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           />
           <input type="hidden" id="donation" value="4" />
           <p>
-            <strong>mhassanist.testnet: </strong>
+            <strong>mhassanist9.testnet: </strong>
             <label htmlFor="donation">
               {
                 "12 Yrs of experience in Java and C#, with a strong background in Blockchain and Smart Contracts"
@@ -78,7 +78,11 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           <button type="button" onClick={show}>
             Show Stream
           </button>
-          <label htmlFor="stream">Steam ID</label>
+          <p>
+            {" "}
+            <label htmlFor="stream">Steam ID</label>
+          </p>
+
           <input
             type="text"
             id="streamid"
@@ -119,7 +123,10 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           <button type="button" onClick={show}>
             Show Stream
           </button>
-          <label htmlFor="stream">Steam ID</label>
+          <p>
+            {" "}
+            <label htmlFor="stream">Steam ID</label>
+          </p>{" "}
           <input
             type="text"
             id="streamid2"
@@ -148,7 +155,7 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           />
           <input type="hidden" id="donation" value="4" />
           <p>
-            <strong>mhassanist.testnet: </strong>
+            <strong>mhassanist9.testnet: </strong>
 
             <label htmlFor="donation">
               {
@@ -162,7 +169,10 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           <button type="button" onClick={show}>
             Show Stream
           </button>
-          <label htmlFor="stream">Steam ID</label>
+          <p>
+            {" "}
+            <label htmlFor="stream">Steam ID</label>
+          </p>{" "}
           <input
             type="text"
             id="streamid3"
