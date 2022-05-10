@@ -30,10 +30,10 @@ async function getstreams(contract2, currentUser) {
   })
 }
 
-async function withdraw(contract2) {
+async function withdraw(contract2, str) {
   return contract2.withdraw(
     {
-      stream_ids: ["Bn3LtGR3MibF91fMKfvQK1sdpjBmALsSjYkDC3JNPuJM"],
+      stream_ids: [str],
     },
     200000000000000,
     1
@@ -47,8 +47,8 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
   async function show() {
     console.log(await getstreams(contract2, currentUser))
   }
-  async function withdrawA() {
-    console.log(await withdraw(contract2))
+  async function withdrawA(streamin) {
+    console.log(await withdraw(contract2, streamin))
   }
 
   return (
@@ -65,6 +65,7 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           />
           <input type="hidden" id="donation" value="4" />
           <p>
+            <strong>mhassanist.testnet: </strong>
             <label htmlFor="donation">
               {
                 "12 Yrs of experience in Java and C#, with a strong background in Blockchain and Smart Contracts"
@@ -77,7 +78,16 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           <button type="button" onClick={show}>
             Show Stream
           </button>
-          <button type="button" onClick={withdrawA}>
+          <label htmlFor="stream">Steam ID</label>
+          <input
+            type="text"
+            id="streamid"
+            placeholder="[Enter Stream Id Here]"
+          />
+          <button
+            type="button"
+            onClick={() => withdrawA(document.getElementById("streamid").value)}
+          >
             Withdraw
           </button>
         </fieldset>
@@ -85,7 +95,7 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
 
       <form>
         <fieldset id="fieldset">
-          <h2>I'm a proficient in C/C++</h2>
+          <h2>I can help with C/C++</h2>
           <input type="hidden" id="nfttitle" value="Kutei 8" />
           <input type="hidden" id="nftdescription" value="Kutei 8" />
           <input
@@ -95,9 +105,11 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           />
           <input type="hidden" id="donation" value="4" />
           <p>
+            <strong>msaudi.testnet: </strong>
+
             <label htmlFor="donation">
               {
-                "6 years of experience in C/C++, with a strong background in Blockchain and Smart Contracts"
+                " 12 Yrs of experience in Java and C#, with a strong background in Blockchain and Smart Contracts"
               }
             </label>
           </p>
@@ -107,7 +119,18 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           <button type="button" onClick={show}>
             Show Stream
           </button>
-          <button type="button" onClick={withdrawA}>
+          <label htmlFor="stream">Steam ID</label>
+          <input
+            type="text"
+            id="streamid2"
+            placeholder="[Enter Stream Id Here]"
+          />
+          <button
+            type="button"
+            onClick={() =>
+              withdrawA(document.getElementById("streamid2").value)
+            }
+          >
             Withdraw
           </button>
         </fieldset>
@@ -115,7 +138,7 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
 
       <form>
         <fieldset id="fieldset">
-          <h2>I'm an expert in Flutter</h2>
+          <h2>I can help with Flutter and Dart</h2>
           <input type="hidden" id="nfttitle" value="Kutei 8" />
           <input type="hidden" id="nftdescription" value="Kutei 8" />
           <input
@@ -125,9 +148,11 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           />
           <input type="hidden" id="donation" value="4" />
           <p>
+            <strong>mhassanist.testnet: </strong>
+
             <label htmlFor="donation">
               {
-                "10 years of experience in Flutter, with a strong background in Dart and Web"
+                "12 Yrs of experience in Java and C#, with a strong background in Blockchain and Smart Contracts"
               }
             </label>
           </p>
@@ -137,7 +162,18 @@ export default function Form({ onSubmit, currentUser, contract, contract2 }) {
           <button type="button" onClick={show}>
             Show Stream
           </button>
-          <button type="button" onClick={withdrawA}>
+          <label htmlFor="stream">Steam ID</label>
+          <input
+            type="text"
+            id="streamid3"
+            placeholder="[Enter Stream Id Here]"
+          />
+          <button
+            type="button"
+            onClick={() =>
+              withdrawA(document.getElementById("streamid3").value)
+            }
+          >
             Withdraw
           </button>
         </fieldset>
